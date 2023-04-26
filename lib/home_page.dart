@@ -5,6 +5,8 @@ import 'package:texttospeachapp/Speachtotexttranslate.dart';
 import 'package:texttospeachapp/texttranslate.dart';
 import 'package:texttospeachapp/utils/Colors.dart';
 
+import 'ml.dart';
+
 class Home_Page extends StatefulWidget {
   const Home_Page({Key? key}) : super(key: key);
 
@@ -18,7 +20,7 @@ class _Home_PageState extends State<Home_Page> {
     int pageno = 1;
     whichpage() {
       if (pageno == 0) {
-        return TextTranslate();
+        return Imagetotext();
       } else if (pageno == 1) {
         return SpeachToTextTranslate();
       } else {

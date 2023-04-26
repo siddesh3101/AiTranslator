@@ -5,6 +5,8 @@ import 'package:texttospeachapp/Speachtotexttranslate.dart';
 import 'package:texttospeachapp/texttranslate.dart';
 import 'package:texttospeachapp/utils/Colors.dart';
 
+import 'ml.dart';
+
 class HomePage extends StatefulWidget {
   HomePage({Key? key}) : super(key: key);
 
@@ -16,7 +18,7 @@ class _HomeState extends State<HomePage> {
   var initialindex = 1;
   var currentindex = 1;
   var screens = [
-    const TextTranslate(),
+    const Imagetotext(),
     const TextTranslate(),
     const SpeachToTextTranslate()
   ];
